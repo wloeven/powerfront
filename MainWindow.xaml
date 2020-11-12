@@ -1,0 +1,36 @@
+﻿<Window x:Name="PowerFront" x:Class="MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PowerFront"
+        mc:Ignorable="d"
+        Title="PowerFront" Height="768" Width="1024" WindowStartupLocation="CenterScreen" ResizeMode="NoResize" WindowState="Normal" WindowStyle="None">
+    <Grid>
+        <Label x:Name="_lb_osselection" Content="Domein" HorizontalAlignment="Left" Margin="122.4,236.816,0,0" VerticalAlignment="Top" FontSize="16" Width="126.184"/>
+        <TextBox x:Name="_tb_devname" Margin="300,174.183,0,0" TextWrapping="Wrap" Text="TextBox" FontSize="22" Height="36.823" VerticalAlignment="Top" HorizontalAlignment="Left" Width="269" FontWeight="Bold" TextAlignment="Center"/>
+        <ComboBox x:Name="_cb_osselection" HorizontalAlignment="Left" Margin="300,237,0,0" VerticalAlignment="Top" Width="580" FontSize="22"/>
+        <Button x:Name="_bt_ok" Content="OK" HorizontalAlignment="Left" Margin="476.4,421.182,0,0" VerticalAlignment="Top" Width="93" Background="#FFD2250F" Foreground="White" FontWeight="Bold" FontSize="22" Height="37.02">
+        </Button>
+        <Label x:Name="_lb_Locationsel" Content="Locatie" HorizontalAlignment="Left" Margin="123.412,290.531,0,0" VerticalAlignment="Top" FontSize="16" Width="126.184"/>
+        <ComboBox x:Name="_cb_locationsel" HorizontalAlignment="Left" Margin="300,291,0,0" VerticalAlignment="Top" Width="580" FontSize="22"/>
+        <Image x:Name="_img_logo" HorizontalAlignment="Center" Margin="0,510,94.8,24.4" Width="948" Source="scholenaanbod2.png" RenderTransformOrigin="0.5,0.5" VerticalAlignment="Bottom">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+        <Label x:Name="_lb_devname" Content="Computer naam" Margin="122.4,171.446,0,0" HorizontalAlignment="Left" Width="126.184" Height="39.56" VerticalAlignment="Top" FontSize="16"/>
+        <Label x:Name="_lb_info_mac" Content="macadres" HorizontalAlignment="Left" Margin="371.2,20.5,0,0" VerticalAlignment="Top" AutomationProperties.Name="_lb_mac" Width="431" FontSize="18"/>
+        <Label x:Name="_lb_info_hw" Content="Modelnummer" HorizontalAlignment="Left" Margin="371.2,59.44,0,0" VerticalAlignment="Top" AutomationProperties.Name="_lb_mac" Width="431" FontSize="18"/>
+        <Label x:Name="_lb_info_hw_man" Content="Leverancier" HorizontalAlignment="Left" Margin="371.2,93.38,0,0" VerticalAlignment="Top" AutomationProperties.Name="_lb_mac" Width="431" FontSize="18"/>
+        <Label x:Name="_lb_info_mac_Label" Content="MAC adres" HorizontalAlignment="Left" Margin="122.4,25.5,0,0" VerticalAlignment="Top" AutomationProperties.Name="_lb_mac" Width="178" FontSize="18"/>
+        <Label x:Name="_lb_info_hw_Label" Content="Model / Serienummer" HorizontalAlignment="Left" Margin="122.4,59.44,0,0" VerticalAlignment="Top" AutomationProperties.Name="_lb_mac" Width="197.2" FontSize="18"/>
+        <Label x:Name="_lb_info_hw_man_label" Content="Leverancier" HorizontalAlignment="Left" Margin="122.4,93.38,0,0" VerticalAlignment="Top" AutomationProperties.Name="_lb_mac" Width="178" FontSize="18"/>
+        <Label x:Name="_lb_info_uefi" Content="UEFI" HorizontalAlignment="Left" Margin="807.2,25.7,0,0" VerticalAlignment="Top" AutomationProperties.Name="_lb_mac" Width="66" FontSize="22" Cursor="Help" FontWeight="Bold" Foreground="#FFDD1313" Background="White"/>
+    </Grid>
+</Window>
