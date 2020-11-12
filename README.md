@@ -4,6 +4,9 @@ SCCM OSD frontend
 A customizable front end for use in SCCM OSD zero or light touch deployments, based on XAML forms, WMI queries, configmgr webservices and SCCM task sequence integration. 
 By using powershell during the start of a OSD task sequence it is possible to dynamically fill all OSD variables and present the end user with a wide range of options in a single input screen and single task sequence.
 
+In the example powershell file the user can select a OS version, fill in a computername and select a location / OU before continuing the task sequence.
+If the computer is already a member of the selected domain the current computername will be filled in and locked to prevent duplicate computeraccounts.
+
 # prerequisites 
 - configmgr webservices https://msendpointmgr.com/configmgr-webservice/
 - serviceui.exe from MDT tools package
