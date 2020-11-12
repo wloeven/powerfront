@@ -35,6 +35,6 @@ By using powershell during the start of a OSD task sequence it is possible to dy
 
 - file - powerfront.ps1 - main script file.
 - file - mainwindow.xaml - front end design ui.
-- file - serviceui.exe - MDT serviceui executable to start powershell within the OSD PE environment and exposing the task sequence variables to powershell
+- file - ServiceUI.exe - MDT serviceui executable (x86) to start powershell within the OSD PE environment and exposing the task sequence variables to powershell
 - folder - images - used to store logo and background images.
 
